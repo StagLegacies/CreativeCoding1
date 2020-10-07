@@ -1,0 +1,44 @@
+<html>
+    <title>Homepage</title>
+    <body>
+
+    <head>
+
+            <script>
+                function checkForm(){
+                    var name;
+                    name = document.getElementById("fname").value;
+                    window.alert("name: " + name);
+                }
+            </script>
+
+           <link rel="stylesheet" href="solomontowersCSS.css"> 
+           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
+
+            <style>
+                span{
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+            </style>
+
+            <link rel="stylesheet" type="text/css" href="solomontowersCSS.css">
+            <a href="solomontowersCSSapplied.html" style="text-decoration: none; ">Menu</a>
+            <a href="solomontowersshortstoryCSSapplied.html" style="text-decoration: none;">Short Story</a>
+            <a href="solomontowersformsCSSapplied.html" style="text-decoration: none;">Information Form</a>             
+        </head>
+         
+        <h1><span class="blackColor">Contact Us</span></h1>
+        <form action="solomontowersforms.html" type="Post">
+            First Name: <input type="text" id="fName"><br>
+            Last Name: <input type="text" id="lName"><br>
+            Email Address:</Address> <input type="text" id="eMail"><br>
+            <!-- <button id="mySubmit" type="submit">Submit</button> -->
+            <button id="mySubmit" onClick="checkForm();">Submit</button>
+
+        <h2><span class="blackColor">Do you accept the terms of agreement?</span></h2>
+            <input type="radio" name="answer" value="Yes">Yes<br>
+            <input type="radio" name="answer" value="No">No<br>
+            <button id="mySubmit" onClick="checkForm();">Submit</button>
+        </form>
+    </body>
+</html>

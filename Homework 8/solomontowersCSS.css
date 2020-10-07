@@ -1,0 +1,31 @@
+body{
+    background-color: rgba(110, 250, 255, 0.411);
+    text-align: center;
+}
+h1{
+    background-color: rgb(255, 255, 255);
+    color: rgb(3, 85, 0);
+    text-align: center;
+}
+h2{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration-color: black;
+}
+span.blackColor{
+    font-style: italic;
+    color:black;
+}
+#specificLink{
+    color: darkblue;
+    font-family: fantasy;
+}
+.hero-image {
+    background-image: url("old-paper.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 1000px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
