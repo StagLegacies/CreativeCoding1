@@ -3,12 +3,62 @@
     <body>
 
     <head>
-
             <script>
                 function checkForm(){
-                    var name;
-                    name = document.getElementById("fname").value;
-                    window.alert("name: " + name);
+                    var fName;
+                    fName = document.getElementById("fname").value;
+                    var lName; 
+                    lName = document.getElementById("lname").value;
+                    var eMail; 
+                    eMail = document.getElementById("email").value;
+                    var termsAgree;
+                    termsAgree = document.getElementsByName("answerValue").value;
+                    if (fName == "")
+                    {
+                        document.getElementById("fname").focus();
+                        document.getElementById("fname").style.backgroundColor = "red";
+                        // document.getElementById("fname").style.border = "3px solid red";
+                    }
+                    else 
+                    {
+                        document.getElementById("fname").style.backgroundColor = "green";
+                        // document.getElementById("fname").style.border = "3 px solid green";
+                    }
+                    if (lName == "")
+                    {
+                        document.getElementById("lname").focus();
+                        document.getElementById("lname").style.backgroundColor = "red";
+                        // document.getElementById("fname").style.border = "3px solid red";
+                    }
+                    else 
+                    {
+                        document.getElementById("lname").style.backgroundColor = "green";
+                        // document.getElementById("fname").style.border = "3 px solid green";
+                    }
+                    if (eMail == "")
+                    {
+                        document.getElementById("email").focus();
+                        document.getElementById("email").style.backgroundColor = "red";
+                        // document.getElementById("fname").style.border = "3px solid red";
+                    }
+                    else 
+                    {
+                        document.getElementById("email").style.backgroundColor = "green";
+                        // document.getElementById("fname").style.border = "3 px solid green";
+                    }
+                    if(document.getElementById("answerValue").checked)
+                    {
+                        window.alert("Thank you for your answer.")
+                       // document.getElementById("answerValue").focus();
+                      //  document.getElementById("answerValue").style.backgroundColor = "red";
+                        // document.getElementById("fname").style.border = "3px solid red";
+                    }
+                    else 
+                    {
+                       window.alert("Please agree or disagree with the terms.")
+                     //   document.getElementById("answerValue").style.backgroundColor = "red";
+                        // document.getElementById("fname").style.border = "3 px solid green";
+                    }
                 }
             </script>
 
@@ -28,16 +78,16 @@
         </head>
          
         <h1><span class="blackColor">Contact Us</span></h1>
-        <form action="solomontowersforms.html" type="Post">
-            First Name: <input type="text" id="fName"><br>
-            Last Name: <input type="text" id="lName"><br>
-            Email Address:</Address> <input type="text" id="eMail"><br>
+        <!-- <form action="solomontowersforms.html" type="Post"> -->
+            First Name: <input type="text" id="fname"><br>
+            Last Name: <input type="text" id="lname"><br>
+            Email Address:</Address> <input type="text" id="email"><br>
             <!-- <button id="mySubmit" type="submit">Submit</button> -->
-            <button id="mySubmit" onClick="checkForm();">Submit</button>
+            <!-- <button id="mySubmit" onClick="checkForm();">Submit</button> -->  
 
         <h2><span class="blackColor">Do you accept the terms of agreement?</span></h2>
-            <input type="radio" name="answer" value="Yes">Yes<br>
-            <input type="radio" name="answer" value="No">No<br>
+            <input type="radio" name="answer" value="termsvalue" id="answerValue"> Yes<br>
+            <input type="radio" name="answer" value="termsvalue" id="answerValue"> No<br>
             <button id="mySubmit" onClick="checkForm();">Submit</button>
         </form>
     </body>
